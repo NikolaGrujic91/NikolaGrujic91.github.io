@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Nikola's blog</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Londrina+Outline&display=swap" rel="stylesheet">
+        <script src="script.js"></script>
+        <link rel="stylesheet" type="text/css" href="animate.css">
+        <link href='https://fonts.googleapis.com/css?family=Raleway Dots' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css?family=Bad+Script&display=swap" rel="stylesheet"> 
+    </head>
+    <body class="mainPage">
+        <nav class="navbar transparent navbar-inverse navbar-expand-sm navbar-dark">
+           <div class="container">
+            <div class="navbar-brand">NG</div>
+            <button class="navbar-toggler toggler-example" 
+                    type="button" 
+                    data-toggle="collapse" 
+                    data-target="#navbarSupportedContent1"
+                    aria-controls="navbarSupportedContent1" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown" href="#">ARTICLES</a>
+                        <div class="dropdown-menu">
+                            <a id="macOSdd" class="dropdown-item" href="macOS.html">macOS</a>
+                            <a id="iOSdd" class="dropdown-item" href="iOS.html">iOS</a>
+                            <a id="WindowsFormsdd" class="dropdown-item" href="WindowsForms.html">WindowsForms</a>
+                            <a id="WPFdd" class="dropdown-item" href="WPF.html">WPF</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">CONTACT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a onclick="openSearch()" class="nav-link" href="#">SEARCH</a>
+                    </li>
+                </ul>
+             </div> <!-- collapse -->
+         
+            </div><!-- container -->
+             </nav>
+             <div id="myOverlay" class="overlay animated jackInTheBox">
+                <span class="closebtn" onclick="closeSearch()">x</span>
+                <div class="overlay-content">
+                  <form action="action_page.php">
+                    <input align="center" type="text" placeholder="Search for.." name="search">
+                  </form>
+                </div>
+              </div>
+             <div class="container" id="mainContent">
+                    <h1 align="center" class="fullFont"><strong>UI Frameworks</strong></h1>
+                    <h4 align="center" class="dottedFont">tips, trick & snippets</h3>
+                    <br>
+                    <div class="container mt-5" align="center">
+                        <div class="card-deck w-xl-75 w-sm-100">
+                            <div id="card1" class="card cardBackground animated flipInX">
+                                <div class="card-body text-left">
+                                    <a href="macOS.html" style="color: white; text-decoration: none;" class="card-text stretched-link">macOS</a>
+                                </div>
+                            </div>
+                            <div class="card cardBackground animated flipInX">
+                                <div class="card-body text-left">
+                                    <a href="iOS.html" style="color: white; text-decoration: none;" class="card-text stretched-link">iOS</a>
+                                </div>
+                            </div>
+                            <div class="card cardBackground animated flipInX">
+                                <div class="card-body text-left">
+                                    <a href="WindowsForms.html" style="color: white; text-decoration: none;" class="card-text stretched-link">WindowsForms</a>
+                                </div>
+                            </div>
+                            <div class="card cardBackground animated flipInX">
+                                <div class="card-body text-left">
+                                    <a href="WPF.html" style="color: white; text-decoration: none;" class="card-text stretched-link">WPF</a>
+                                </div>
+                            </div> 
+                        </div>
+                    </div><!-- container -->
+             </div><!-- container -->
+
+            
+    </body>
+
+
+</html>
